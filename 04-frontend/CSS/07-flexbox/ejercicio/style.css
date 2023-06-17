@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container-card {
+  background-color: hsl(0, 0%, 100%);
+  width: 900px;
+  height: 600px;
+  display: flex;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 1px 1px 20px 1px rgba(121, 136, 185, 0.699);
+}
+
+.container-left {
+  background-color: blueviolet;
+  width: 450px;
+  border-radius: 20px;
+}
+
+.container-right {
+  background-color: hsl(0, 0%, 100%);
+  width: 450px;
+}
