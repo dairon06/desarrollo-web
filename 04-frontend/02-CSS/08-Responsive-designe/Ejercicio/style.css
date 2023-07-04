@@ -1,0 +1,47 @@
+:root {
+  --color-principal: rgb(61, 61, 255);
+  --letra: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--letra);
+}
+
+header {
+  background-color: var(--color-principal);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  width: 100%;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+main {
+  padding: 100px 20px 20px 20px;
+}
+
+@media (max-width: 600px) {
+  .nav {
+    display: none;
+  }
+}
+
+@media (min-width: 600px) {
+  img {
+    display: none;
+  }
+}
