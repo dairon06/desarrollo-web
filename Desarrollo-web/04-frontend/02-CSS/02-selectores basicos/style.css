@@ -1,0 +1,14 @@
+/* Selector por etiqueta */
+p {
+  color: brown;
+}
+
+/* Selector por class */
+.r {
+  color: black;
+}
+
+/* Selector por id */
+#rr {
+  color: blue;
+}
