@@ -27,7 +27,7 @@ for (let i = 0; i < numeros.length; i++) {
 console.log("Cantidad de numeros pares: " + par);
 console.log("Cantidad de numeros pares: " + impar);*/
 
-//funcion
+//funcion par impar
 function parImpar(array) {
   let par = 0;
   let impar = 0;
