@@ -1,5 +1,6 @@
 :root {
   --color-principal: #008bdb;
+  --color-segundario: rgb(146, 146, 146);
   --tipografia: "Poppins", sans-serif;
   --letra-tamanio: 16px;
   --letra-color: #000;
@@ -35,7 +36,7 @@ header {
 }
 
 footer {
-  background-color: var(--color-principal);
+  background-color: var(--color-segundario);
   padding: 1rem;
   text-align: center;
   color: var(--letra-color-secundario);
@@ -49,6 +50,7 @@ section {
 }
 
 .menu-lateral {
+  z-index: 998;
   position: fixed;
   top: 0;
   left: 0;
@@ -57,6 +59,12 @@ section {
   overflow-y: auto;
   background-color: #000000b9;
   color: var(--letra-color-secundario);
+  transform: translate(100%, 0%);
+  transition: all 0.3s ease-in-out;
+}
+
+.abierto {
+  transform: translate(0, 0);
 }
 
 .menu-lateral nav {
@@ -78,4 +86,22 @@ section {
 
 .menu-lateral nav a:hover {
   color: var(--color-principal);
+}
+
+.btn-contenedor {
+  z-index: 999;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: var(--color-principal);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.5rem;
+  height: 4.5rem;
+}
+
+.btn-contenedor:hover {
+  background-color: var(--color-segundario);
 }
