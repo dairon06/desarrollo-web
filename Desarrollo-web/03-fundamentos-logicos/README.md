@@ -1,1 +1,0 @@
-fundamnetos logicos

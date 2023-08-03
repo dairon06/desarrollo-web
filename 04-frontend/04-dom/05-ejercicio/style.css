@@ -47,6 +47,10 @@ footer {
 section {
   padding: 2rem;
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .menu-lateral {
@@ -104,4 +108,58 @@ section {
 
 .btn-contenedor:hover {
   background-color: var(--color-segundario);
+}
+
+.calculadora {
+  background-color: var(--color-segundario);
+  color: var(--letra-color-secundario);
+  width: 350px;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.pantalla {
+  grid-column: 1 / -1;
+  background-color: white;
+  color: var(--letra-color);
+  padding: 1.5rem;
+  border: 0.5rem;
+  font-size: 2rem;
+  text-align: right;
+  margin-bottom: 0.7rem;
+  font-family: monospace;
+  font-weight: 700;
+}
+
+.btn-calculadora {
+  background-color: var(--color-segundario);
+  color: var(--letra-color-secundario);
+  border: none;
+  padding: 1.5rem 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.btn-calculadora:hover {
+  background-color: rgb(80, 80, 80);
+}
+
+#cero {
+  grid-column: 1 / 3;
+}
+
+#igual {
+  grid-row: span 2;
+  background-color: rgb(97, 97, 97);
+}
+
+#igual:hover {
+  background-color: rgb(58, 58, 58);
 }
